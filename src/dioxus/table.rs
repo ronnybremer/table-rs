@@ -1,5 +1,7 @@
 use dioxus::prelude::*;
+#[cfg(target_family = "wasm")]
 use web_sys::UrlSearchParams;
+#[cfg(target_family = "wasm")]
 use web_sys::wasm_bindgen::JsValue;
 
 use crate::dioxus::body::TableBody;
